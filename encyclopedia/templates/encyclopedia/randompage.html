@@ -1,0 +1,10 @@
+{% extends 'encyclopedia/layout.html'%}
+{%block title%}
+Random page 
+{%endblock%} 
+
+{%block body%}
+<strong>{{entry.capitalize}}</strong> <br>
+{{content}}
+<br><a class="btn btn-primary"href = "{% url 'ency:edit' entry%}">Edit Page</a></br>
+{%endblock%}

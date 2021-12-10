@@ -1,0 +1,12 @@
+{% extends 'encyclopedia/layout.html'%}
+{%load static%}
+
+{%block title%}<title>Page not found</title>{%endblock%}
+<link rel="stylesheet"  href="{% static 'encyclopedia/styles.css'%}">
+
+
+
+{%block body%}
+<h1 id ="doesnt" style ="margin-top:25%;margin-left:28%"> {{title}} doesn't exist!</h1>
+<a href="{%url 'ency:index'%}" style="margin-top:25%;margin-left:50%"> Go back</a>
+{%endblock%}

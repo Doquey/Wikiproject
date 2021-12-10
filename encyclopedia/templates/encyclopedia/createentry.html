@@ -1,0 +1,11 @@
+{%extends 'encyclopedia/layout.html'%}
+{%block title%}
+ New page 
+{%endblock%}
+{%block body%}
+<form action="{% url 'ency:createentry'%}" method="POST" style="position:relative;top:10px;font-family:'Times New Roman', Times, serif;">
+    {%csrf_token%}
+    {{form}}
+<input class="btn btn-primary" style="margin-top:3% ;margin-left:36%;" type="submit" value="Save">
+</form>
+{%endblock%}

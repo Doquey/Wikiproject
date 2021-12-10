@@ -1,0 +1,9 @@
+{% extends 'encyclopedia/layout.html'%} 
+{%block body%}
+<form action = "{%url 'ency:edit' form.title%}" method = "POST">
+{%csrf_token%}
+{{form}}
+<input type = "submit">
+</form>
+
+{%endblock%} 

@@ -1,0 +1,11 @@
+{% extends 'encyclopedia/layout.html'%}
+{%block title%} {{title}} {%endblock%}
+
+
+{%block body%} 
+<header><strong>{{title.capitalize}}</strong></header>
+<main>
+    {{content|safe}}
+</main>
+<a class="btn btn-primary" href ="{%url 'ency:edit' title %}"> Edit page </a>
+{%endblock%}

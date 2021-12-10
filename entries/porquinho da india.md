@@ -1,0 +1,1 @@
+porquinhos da india sao muito fofinhos, alguns tem muitos pelos alguns n�o. S�o em sua maioria vegetarianos!
